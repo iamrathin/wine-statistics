@@ -1,0 +1,24 @@
+.statistics-table {
+    margin-top: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
