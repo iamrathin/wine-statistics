@@ -1,46 +1,95 @@
-# Getting Started with Create React App
+# Wine Statistics Project
+---
+## Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project calculates statistical measures of a Wine Data Set and displays the results in a React application. It includes two components, one for Flavanoids statistics and another for Gamma statistics.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+
+---
+## Getting Started
+
+Follow these steps to set up and run the project on your local machine.
+
+### Prerequisites
+
+Before you begin, make sure you have the following installed:
+
+- Node.js: [Download and install Node.js](https://nodejs.org/)
+- Yarn: [Download and install Yarn](https://classic.yarnpkg.com/en/docs/install/)
+
+### Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/iamrathin/wine-statistics.git
+2. Navigate to the project directory:
+    ```bash
+    cd wine-statistics
+
+## Installing project dependencies
+Install project dependencies using Yarn:
+### `yarn install`
+
+## Running the Application
+
+To run the React application, use the following command:
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This will start the development server and open the application in your default web browser. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+You can access it at http://localhost:3000.
 
-### `yarn test`
+## Building the Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+If you want to build the project for production deployment, follow these steps:
+
+Run the build command:
 
 ### `yarn build`
+---
+## Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The project follows the following folder structure:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+src/: Contains the source code.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+components/: React components.
 
-### `yarn eject`
+utils/: Utility functions and data.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+public/: Static assets and HTML template.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+screenshots/: Contains screenshot of the two tables
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+interfaces/: Interface of the json data
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+styles/: common styling file for both table
 
-## Learn More
+---
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The application displays two statistical tables:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Flavanoids Statistics: Displays statistics for the Flavanoids property from the Wine Data Set.
+
+Gamma Statistics: Displays statistics for the Gamma property calculated as Gamma = (Ash * Hue) / Magnesium.
+
+Both tables are displayed on the home page.
+
+---
+## Screenshots
+Flavanoid Table
+
+![Flavanoids Statistics Table](screenshots/flavanoids-table.png)
+
+Gamma Table
+
+![Gamma Statistics Table](screenshots/gamma-table.png)
